@@ -91,6 +91,9 @@ static const char *suspendcmd[]  = { "/home/david/scripts/suspend.sh", NULL };
 /*截图*/
 static const char *screenshotcmd[] = { "flameshot", "gui", NULL };
 
+static const char scratchpadname[] = "scratchpad";
+static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "80x24", NULL };
+
 static Key keys[] = {
 	/* modifier            key                      function        argument */
 	{ MODKEY,              XK_d,                    spawn,          {.v = dmenucmd } },
